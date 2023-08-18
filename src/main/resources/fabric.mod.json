@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "jademod",
+	"version": "${version}",
+	"name": "jademod",
+	"description": "Adds Jade and other gems",
+	"authors": [
+		"CraftyRyte"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/CraftyRyte/Jade-Mod"
+	},
+	"license": "MIT",
+	"icon": "assets/jademod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.craftyryte.jademod.JadeMod"
+		],
+		"client": [
+			"com.craftyryte.jademod.JadeModClient"
+		],
+		"fabric-datagen": [
+			"com.craftyryte.jademod.JadeModDataGenerator"
+		]
+	},
+	"mixins": [
+		"jademod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
